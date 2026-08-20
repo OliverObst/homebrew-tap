@@ -8,7 +8,7 @@ class Mdpager < Formula
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args, "--locked"
+    system "cargo", "install", *std_cargo_args
     man1.install "man/mdpager.1"
   end
 
